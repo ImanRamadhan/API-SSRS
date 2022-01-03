@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = Serenity.LocalText.Get("TechnicalClarification");
+}
+
+<div id="GridDiv"></div>
+
+<script type="text/javascript">
+    jQuery(function () {
+        new SCMONLINE.Procurement.F8_TechnicalClarificationGrid($('#GridDiv'), {}).init();
+
+        Q.initFullHeightGridPage($('#GridDiv'));
+        $(".title-text").html("Klarifikasi Teknis");
+    });
+</script>

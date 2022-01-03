@@ -1,0 +1,22 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SCMONLINE.MonitoringKontrakSynchronizer.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MonitoringKontrakConnection" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=10.13.1.56;Initial Catalog=MONITORING_KONTRAK;Persist Security Info=True;User ID=mk_user;Password=ajnjiub^5aaatfFAST&amp;amp;&amp;amp;%$#A^&amp;amp;A&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=10.13.1.56;Initial Catalog=MONITORING_KONTRAK;Persist Security Info=True;User ID=mk_user;Password=ajnjiub^5aaatfFAST&amp;&amp;%$#A^&amp;A</Value>
+    </Setting>
+    <Setting Name="ScmOnlineConnection" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=10.13.1.53;Initial Catalog=SCM_ONLINE;Persist Security Info=True;User ID=sa;Password=adjfo192377&amp;amp;@@&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=10.13.1.53;Initial Catalog=SCM_ONLINE;Persist Security Info=True;User ID=sa;Password=adjfo192377&amp;@@</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

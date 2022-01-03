@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = Serenity.LocalText.Get("CreateRFQ");
+}
+
+<div id="GridDiv"></div>
+
+<script type="text/javascript">
+    jQuery(function () {
+        new SCMONLINE.Procurement.F3_CreateRFQGrid($('#GridDiv'), {}).init();
+
+        Q.initFullHeightGridPage($('#GridDiv'));
+        $(".title-text").html("Pembuatan RFQ");
+    });
+</script>

@@ -1,0 +1,41 @@
+﻿@using ReportViewerForMvc
+@{
+    ViewData["Title"] = "ReportViewer";
+}
+@*@Html.Partial("ReportViwerASPX")*@
+@section Head {
+    <link rel="stylesheet" href="~/Scripts/daterangepicker/daterangepicker-bs3.css" />
+    <script src="~/Scripts/input-mask/jquery.inputmask.js"></script>
+    <script src="~/Scripts/input-mask/jquery.inputmask.date.extensions.js"></script>
+    <script src="~/Scripts/input-mask/jquery.inputmask.extensions.js"></script>
+    <script src="~/Scripts/daterangepicker/moment.min.js"></script>
+    <script src="~/Scripts/daterangepicker/daterangepicker.js"></script>
+    <script src="~/Scripts/colorpicker/bootstrap-colorpicker.min.js"></script>
+    <script src="~/Scripts/timepicker/bootstrap-timepicker.min.js"></script>
+    <script src="~/Scripts/jquery.icheck.min.js"></script>
+    <script src="~/Scripts/adminlte/demo.js"></script>
+    <script src="~/Scripts/chartjs/Chart.min.js"></script>
+    <script src="~/Scripts/adminlte/demo.js"></script>
+    @*<script src="~/Scripts/chartjs/Chart.bundle.min.js"></script>*@
+}
+@section ContentHeader {
+    @*<h1>@ViewData["Title"]<small></small></h1>*@
+}
+<style>
+
+    .chart-nodata {
+        height: 205px;
+        line-height: 195px;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+</style>
+<div class="box box-default" id="boxId">
+    <div class="box-body">
+        @Html.ReportViewer(ViewBag.ReportViewer as Microsoft.Reporting.WebForms.ReportViewer)
+    </div><!-- /.box -->
+</div><!-- /.box -->
+<script>$("iframe").width($('#boxId').width() - 50);
+                $("iframe").height($('#boxId').height());</script>

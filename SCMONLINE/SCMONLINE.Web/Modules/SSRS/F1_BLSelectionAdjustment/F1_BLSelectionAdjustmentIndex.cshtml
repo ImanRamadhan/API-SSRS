@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = Serenity.LocalText.Get("Bidder List Selection Adjustment");
+}
+
+<div id="GridDiv"></div>
+
+<script type="text/javascript">
+    jQuery(function () {
+        new SCMONLINE.Procurement.F1_BLSelectionAdjustmentGrid($('#GridDiv'), {}).init();
+
+        Q.initFullHeightGridPage($('#GridDiv'));
+        $(".title-text").html("Pemilihan & Penyesuaian Bidder List");
+    });
+</script>

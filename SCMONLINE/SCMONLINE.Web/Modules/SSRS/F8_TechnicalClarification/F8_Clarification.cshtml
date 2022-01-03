@@ -1,0 +1,38 @@
+﻿@model SCMONLINE.Procurement.F8ClarificationModel
+
+<html>
+<head>
+    <title>Pemberitahuan Pemenang Pengadaan</title>
+</head>
+<body>
+    <p>Diberitahukan Kepada Rekan/Partner dari Pertamina Drilling Service Indonesia,</p><br>
+    <p>Panitia Pengadaan Internal telah melaksanakan Klarifikasi teknis dengan hasil yang ada dalam dokumen terlampir berikut :</p>
+    @*<center><p>@Model.CollectiveNumber</p></center>
+
+        <center><p>@Model.Title</p></center>
+
+        <p>Serta mengacu pada penawaran yang diajukan dan berdasarkan Hasil Evaluasi,</p>
+
+        <p>bersama ini diberitahukan sebagai berikut : </p>
+
+        <ul>
+            <li><p>Pemenang Pengadaan Adalah : @Model.VendorWinner</p></li>
+            <li>
+                <p>
+                    Masa sanggah selama 3 hari kerja terhitung mulai tanggal di terbitkannya Fax ini.<br>
+                    Ketentuan dalam mengajukan sanggahan sesuai dengan dokumen Pengadaan.
+                </p>
+            </li>
+        </ul>*@
+    <br><br>
+    <p>Apabila ada pertanyaan terkait email ini, dapat menghubungi Fungsi Supply Chain Management dengan PIC: </p>
+
+    <p>@Model.VendorWinner</p>
+    @*<p>PIC1 (PIC1@pertamina.com) atau PIC2 (PIC2@pertamina.com).</p>*@
+    <p>Demikian disampaikan Terima Kasih.</p><br>
+
+    Terima Kasih,
+    PT.Pertamina Drilling Services Indonesia
+    Panitia Internal Pengadaan Barang
+</body>
+</html>

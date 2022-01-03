@@ -1,0 +1,185 @@
+﻿
+namespace SCMONLINE.Procurement {
+    export interface ProcParticipantItemRow {
+        ProcParticipantItemId?: number;
+        ProcParticipantId?: number;
+        ProcurementId?: number;
+        RfqItemId?: number;
+        BidPrice?: number;
+        BidPriceVsOe?: number;
+        BidPriceVsOePercentage?: number;
+        Rank?: number;
+        EvaluationDescription?: string;
+        NegotiationPrice?: number;
+        NpVsOe?: number;
+        NpVsOePercentage?: number;
+        NegotiationRank?: number;
+        NegotiationDesc?: string;
+        ProposeDisclaimer?: boolean;
+        DisclaimerDesc?: string;
+        EvaluationConclusionItemId?: number;
+        ProcParticipantProcurementId?: number;
+        ProcParticipantSequenceNo?: number;
+        ProcParticipantVendorId?: string;
+        ProcParticipantPriceDocumentFile?: string;
+        ProcParticipantPriceDocumentName?: string;
+        ProcParticipantTechSpecDocFile?: string;
+        ProcParticipantTechSpecDocName?: string;
+        ProcParticipantSupportingLetterFile?: string;
+        ProcParticipantSupportingLetterName?: string;
+        ProcParticipantCatalogFile?: string;
+        ProcParticipantCatalogName?: string;
+        ProcParticipantSubmitDocTnc?: boolean;
+        ProcParticipantSubmitDocTncDate?: string;
+        ProcParticipantAdminDocExists?: boolean;
+        ProcParticipantTechSpecDocExists?: boolean;
+        ProcParticipantSupportingLetterExists?: boolean;
+        ProcParticipantCatalogExists?: boolean;
+        ProcParticipantOpeningDocDesc?: string;
+        ProcParticipantAdminDocAtk?: number;
+        ProcParticipantTechSpecDocAtk?: number;
+        ProcParticipantSupportingLetterAtk?: number;
+        ProcParticipantCatalogAtk?: number;
+        ProcParticipantEvaluationDesc?: string;
+        ProcParticipantClarificationRequest?: string;
+        ProcParticipantEvaluationConclusionId?: number;
+        ProcParticipantClarificationOffer?: string;
+        ProcParticipantClarificationResult?: string;
+        ProcParticipantSource?: string;
+        ProcParticipantF5ParticipantSubmitDate?: string;
+        ProcParticipantF5ParticipantSubmitBy?: string;
+        ProcParticipantFinalBidPrice?: number;
+        ProcParticipantSubmitObjection?: boolean;
+        ProcParticipantObjectionDescription?: string;
+        ProcParticipantF15ParticipantSubmitDate?: string;
+        ProcParticipantF15ParticipantSubmitBy?: string;
+        ProcParticipantInvitation?: boolean;
+        ProcParticipantQuoteDesc?: string;
+        EvaluationConclusionItemName?: string;
+        EvaluationConclusionItemDescription?: string;
+    }
+
+    export namespace ProcParticipantItemRow {
+        export const idProperty = 'ProcParticipantItemId';
+        export const nameProperty = 'EvaluationDescription';
+        export const localTextPrefix = 'Procurement.ProcParticipantItem';
+
+        export namespace Fields {
+            export declare const ProcParticipantItemId;
+            export declare const ProcParticipantId;
+            export declare const ProcurementId;
+            export declare const RfqItemId;
+            export declare const BidPrice;
+            export declare const BidPriceVsOe;
+            export declare const BidPriceVsOePercentage;
+            export declare const Rank;
+            export declare const EvaluationDescription;
+            export declare const NegotiationPrice;
+            export declare const NpVsOe;
+            export declare const NpVsOePercentage;
+            export declare const NegotiationRank;
+            export declare const NegotiationDesc;
+            export declare const ProposeDisclaimer;
+            export declare const DisclaimerDesc;
+            export declare const EvaluationConclusionItemId;
+            export declare const ProcParticipantProcurementId;
+            export declare const ProcParticipantSequenceNo;
+            export declare const ProcParticipantVendorId;
+            export declare const ProcParticipantPriceDocumentFile;
+            export declare const ProcParticipantPriceDocumentName;
+            export declare const ProcParticipantTechSpecDocFile;
+            export declare const ProcParticipantTechSpecDocName;
+            export declare const ProcParticipantSupportingLetterFile;
+            export declare const ProcParticipantSupportingLetterName;
+            export declare const ProcParticipantCatalogFile;
+            export declare const ProcParticipantCatalogName;
+            export declare const ProcParticipantSubmitDocTnc;
+            export declare const ProcParticipantSubmitDocTncDate;
+            export declare const ProcParticipantAdminDocExists;
+            export declare const ProcParticipantTechSpecDocExists;
+            export declare const ProcParticipantSupportingLetterExists;
+            export declare const ProcParticipantCatalogExists;
+            export declare const ProcParticipantOpeningDocDesc;
+            export declare const ProcParticipantAdminDocAtk;
+            export declare const ProcParticipantTechSpecDocAtk;
+            export declare const ProcParticipantSupportingLetterAtk;
+            export declare const ProcParticipantCatalogAtk;
+            export declare const ProcParticipantEvaluationDesc;
+            export declare const ProcParticipantClarificationRequest;
+            export declare const ProcParticipantEvaluationConclusionId;
+            export declare const ProcParticipantClarificationOffer;
+            export declare const ProcParticipantClarificationResult;
+            export declare const ProcParticipantSource;
+            export declare const ProcParticipantF5ParticipantSubmitDate;
+            export declare const ProcParticipantF5ParticipantSubmitBy;
+            export declare const ProcParticipantFinalBidPrice;
+            export declare const ProcParticipantSubmitObjection;
+            export declare const ProcParticipantObjectionDescription;
+            export declare const ProcParticipantF15ParticipantSubmitDate;
+            export declare const ProcParticipantF15ParticipantSubmitBy;
+            export declare const ProcParticipantInvitation;
+            export declare const ProcParticipantQuoteDesc;
+            export declare const EvaluationConclusionItemName;
+            export declare const EvaluationConclusionItemDescription;
+        }
+
+        [
+            'ProcParticipantItemId',
+            'ProcParticipantId',
+            'ProcurementId',
+            'RfqItemId',
+            'BidPrice',
+            'BidPriceVsOe',
+            'BidPriceVsOePercentage',
+            'Rank',
+            'EvaluationDescription',
+            'NegotiationPrice',
+            'NpVsOe',
+            'NpVsOePercentage',
+            'NegotiationRank',
+            'NegotiationDesc',
+            'ProposeDisclaimer',
+            'DisclaimerDesc',
+            'EvaluationConclusionItemId',
+            'ProcParticipantProcurementId',
+            'ProcParticipantSequenceNo',
+            'ProcParticipantVendorId',
+            'ProcParticipantPriceDocumentFile',
+            'ProcParticipantPriceDocumentName',
+            'ProcParticipantTechSpecDocFile',
+            'ProcParticipantTechSpecDocName',
+            'ProcParticipantSupportingLetterFile',
+            'ProcParticipantSupportingLetterName',
+            'ProcParticipantCatalogFile',
+            'ProcParticipantCatalogName',
+            'ProcParticipantSubmitDocTnc',
+            'ProcParticipantSubmitDocTncDate',
+            'ProcParticipantAdminDocExists',
+            'ProcParticipantTechSpecDocExists',
+            'ProcParticipantSupportingLetterExists',
+            'ProcParticipantCatalogExists',
+            'ProcParticipantOpeningDocDesc',
+            'ProcParticipantAdminDocAtk',
+            'ProcParticipantTechSpecDocAtk',
+            'ProcParticipantSupportingLetterAtk',
+            'ProcParticipantCatalogAtk',
+            'ProcParticipantEvaluationDesc',
+            'ProcParticipantClarificationRequest',
+            'ProcParticipantEvaluationConclusionId',
+            'ProcParticipantClarificationOffer',
+            'ProcParticipantClarificationResult',
+            'ProcParticipantSource',
+            'ProcParticipantF5ParticipantSubmitDate',
+            'ProcParticipantF5ParticipantSubmitBy',
+            'ProcParticipantFinalBidPrice',
+            'ProcParticipantSubmitObjection',
+            'ProcParticipantObjectionDescription',
+            'ProcParticipantF15ParticipantSubmitDate',
+            'ProcParticipantF15ParticipantSubmitBy',
+            'ProcParticipantInvitation',
+            'ProcParticipantQuoteDesc',
+            'EvaluationConclusionItemName',
+            'EvaluationConclusionItemDescription'
+        ].forEach(x => (<any>Fields)[x] = x);
+    }
+}

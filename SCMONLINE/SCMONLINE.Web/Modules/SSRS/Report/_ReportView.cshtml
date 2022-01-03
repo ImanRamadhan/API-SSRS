@@ -1,0 +1,59 @@
+﻿@*<!DOCTYPE html>
+
+    <html>
+    <head>
+            @{ Html.RenderPartial(MVC.Views.Shared._LayoutHead) ;}
+            <meta name="viewport" content="width=device-width" />
+            <title>@ViewBag.Title - Coba</title>
+            <style>
+                html, body {
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                }
+            </style>
+        </head>
+    <body>
+        @using ReportViewerForMvc
+        @if (ViewBag.ReportViewer != null)
+        {
+            @Html.ReportViewer(ViewBag.ReportViewer as Microsoft.Reporting.WebForms.ReportViewer)
+        }
+
+        <script type="text/javascript">
+            $(function () {
+                $("iframe[src*='Viewer']").width("100%").height("700");
+            });
+
+            jQuery(document).ready(function () {
+                var height = $(window).height();
+                $("iframe[src*='Viewer']").css('height', height);
+            });
+        </script>
+    </body>
+    </html>*@
+
+<html>
+<head>
+    <style>
+        iframe {
+            /*for the report viewer*/
+            border: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    @using ReportViewerForMvc
+    @if (ViewBag.ReportViewer != null)
+    {
+        @Html.ReportViewer(ViewBag.ReportViewer as Microsoft.Reporting.WebForms.ReportViewer)
+    }
+
+</body>
+</html>

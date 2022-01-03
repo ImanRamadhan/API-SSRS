@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = Serenity.LocalText.Get("SubmitTenderDocument");
+}
+
+<div id="GridDiv"></div>
+
+<script type="text/javascript">
+    jQuery(function () {
+        new SCMONLINE.Procurement.F5_SubmitTenderDocumentGrid($('#GridDiv'), {}).init();
+
+        Q.initFullHeightGridPage($('#GridDiv'));
+        $(".title-text").html("Pengiriman dokumen penawaran");
+    });
+</script>

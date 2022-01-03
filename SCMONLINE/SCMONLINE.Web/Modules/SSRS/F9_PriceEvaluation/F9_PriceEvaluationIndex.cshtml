@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = Serenity.LocalText.Get("PriceEvaluation");
+}
+
+<div id="GridDiv"></div>
+
+<script type="text/javascript">
+    jQuery(function () {
+        new SCMONLINE.Procurement.F9_PriceEvaluationGrid($('#GridDiv'), {}).init();
+
+        Q.initFullHeightGridPage($('#GridDiv'));
+        $(".title-text").html("Evaluasi Harga");
+    });
+
+</script>

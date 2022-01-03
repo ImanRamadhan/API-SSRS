@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewData["Title"] = "ReportViewer";
+}
+@section Head {
+    <link rel="stylesheet" href="~/Scripts/daterangepicker/daterangepicker-bs3.css" />
+    <script src="~/Scripts/input-mask/jquery.inputmask.js"></script>
+    <script src="~/Scripts/input-mask/jquery.inputmask.date.extensions.js"></script>
+    <script src="~/Scripts/input-mask/jquery.inputmask.extensions.js"></script>
+    <script src="~/Scripts/daterangepicker/moment.min.js"></script>
+    <script src="~/Scripts/daterangepicker/daterangepicker.js"></script>
+    <script src="~/Scripts/colorpicker/bootstrap-colorpicker.min.js"></script>
+    <script src="~/Scripts/timepicker/bootstrap-timepicker.min.js"></script>
+    <script src="~/Scripts/jquery.icheck.min.js"></script>
+    <script src="~/Scripts/adminlte/demo.js"></script>
+    <script src="~/Scripts/chartjs/Chart.min.js"></script>
+    <script src="~/Scripts/adminlte/demo.js"></script>
+    @*<script src="~/Scripts/chartjs/Chart.bundle.min.js"></script>*@
+}
+@section ContentHeader {
+    @*<h1>@ViewData["Title"]<small></small></h1>*@
+}
+<div class="row">
+    <div class="col-md-3">
+        <div class="box-header with-border">
+            <h3 class="box-title">Reporting F3</h3>
+            <div class="box-tools pull right">  
+                <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            </div><!-- /.box-tools -->
+        </div><!-- /.box-header -->
+
+        <div class="box-body">
+            <a href="@Url.Action("rptBSWSBudgetRecon", "BudgetReport")" target="_blank" title="Reporting F1">Reporting</a>
+            <div style="height:5px;"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,542 @@
+﻿
+namespace SCMONLINE.Procurement {
+    export interface F99TestRow {
+        ProcParticipantId?: number;
+        ProcurementId?: number;
+        SequenceNo?: number;
+        VendorId?: string;
+        PriceDocumentFile?: string;
+        PriceDocumentName?: string;
+        TechSpecDocFile?: string;
+        TechSpecDocName?: string;
+        SupportingLetterFile?: string;
+        SupportingLetterName?: string;
+        CatalogFile?: string;
+        CatalogName?: string;
+        SubmitDocTnc?: boolean;
+        SubmitDocTncDate?: string;
+        AdminDocExists?: boolean;
+        TechSpecDocExists?: boolean;
+        SupportingLetterExists?: boolean;
+        CatalogExists?: boolean;
+        OpeningDocDesc?: string;
+        AdminDocAtk?: number;
+        TechSpecDocAtk?: number;
+        SupportingLetterAtk?: number;
+        CatalogAtk?: number;
+        EvaluationDesc?: string;
+        ClarificationRequest?: string;
+        EvaluationConclusionId?: number;
+        ClarificationOffer?: string;
+        ClarificationResult?: string;
+        Source?: string;
+        F5ParticipantSubmitDate?: string;
+        F5ParticipantSubmitBy?: string;
+        FinalBidPrice?: number;
+        SubmitObjection?: boolean;
+        ObjectionDescription?: string;
+        F15ParticipantSubmitDate?: string;
+        F15ParticipantSubmitBy?: string;
+        Invitation?: boolean;
+        QuoteDesc?: string;
+        ProcurementProcurementTypeId?: string;
+        ProcurementStatus?: string;
+        ProcurementCollectiveNumber?: string;
+        ProcurementTitle?: string;
+        ProcurementClassification?: string;
+        ProcurementQualification?: string;
+        ProcurementRequestedBy?: string;
+        ProcurementRequestorPosition?: string;
+        ProcurementApprovedBy?: string;
+        ProcurementApproverPosition?: string;
+        ProcurementSapBidderListCreatedBy?: string;
+        ProcurementSapBidderListCreatedDate?: string;
+        ProcurementCreatedBy?: string;
+        ProcurementCreatedDate?: string;
+        ProcurementGuaranteePercentage?: number;
+        ProcurementOfficeAddress?: number;
+        ProcurementProcValueRangeId?: number;
+        ProcurementCommitteeTypeId?: number;
+        ProcurementPerformanceGuaranteeRequired?: boolean;
+        ProcurementTenderPeriod?: number;
+        ProcurementDeliveryTime?: number;
+        ProcurementDestinationId?: number;
+        ProcurementContractTypeId?: number;
+        ProcurementCurrencyId?: string;
+        ProcurementDocSubmitMethodId?: number;
+        ProcurementAanwijzingExists?: boolean;
+        ProcurementAanwijzingDate?: string;
+        ProcurementAanwijzingClosingDate?: string;
+        ProcurementAanwijzingLocation?: string;
+        ProcurementAanwijzingClosingLocation?: string;
+        ProcurementAanwijzingSecretary?: string;
+        ProcurementTechnicalExplanation?: string;
+        ProcurementAdministrativeExplanation?: string;
+        ProcurementOtherExplanation?: string;
+        ProcurementAanwijzingSummary?: string;
+        ProcurementFieldSurveyExists?: boolean;
+        ProcurementFieldSurveyAddress?: string;
+        ProcurementItbDocumentFile?: string;
+        ProcurementItbDocumentName?: string;
+        ProcurementRksDocumentFile?: string;
+        ProcurementRksDocumentName?: string;
+        ProcurementTenderDocSubmitOpenDate?: string;
+        ProcurementTenderDocSubmitCloseDate?: string;
+        ProcurementOrderTypeId?: string;
+        ProcurementPurchDocNum?: string;
+        ProcurementRfqDate?: string;
+        ProcurementQuotationDeadline?: string;
+        ProcurementPurchGroup?: string;
+        ProcurementPrNo?: string;
+        ProcurementAuthPersonName?: string;
+        ProcurementAuthPosition?: string;
+        ProcurementHeaderText?: string;
+        ProcurementHeaderNote?: string;
+        ProcurementWorkDescription?: string;
+        ProcurementBankKey?: string;
+        ProcurementPoCover?: string;
+        ProcurementDeliveryAddress?: string;
+        ProcurementToPTargVal?: string;
+        ProcurementYourReference?: string;
+        ProcurementOurReference?: string;
+        ProcurementSalesPerson?: string;
+        ProcurementTelephone?: string;
+        ProcurementValidityStart?: string;
+        ProcurementValidityEnd?: string;
+        ProcurementItemInterval?: number;
+        ProcurementSubItemInterval?: number;
+        ProcurementWarranty?: string;
+        ProcurementLanguage?: string;
+        ProcurementEvaluationClosingPriceDate?: string;
+        ProcurementReviewOeRequired?: boolean;
+        ProcurementProcAgreement?: boolean;
+        ProcurementProcAgreementDate?: string;
+        ProcurementProcAsRequired?: boolean;
+        ProcurementProcAsApproved?: boolean;
+        ProcurementProcAsApprovedDate?: string;
+        ProcurementProcAsDesc?: string;
+        ProcurementFinalConclusionDesc?: string;
+        ProcurementWinnerNominationDate?: string;
+        ProcurementObjectionCloseDate?: string;
+        ProcurementPoDocName?: string;
+        ProcurementTemporaryPic?: string;
+        ProcurementPoNumber?: string;
+        ProcurementPoDocFile?: string;
+        ProcurementF1SubmitDate?: string;
+        ProcurementF1SubmitBy?: string;
+        ProcurementF2SubmitDate?: string;
+        ProcurementF2SubmitBy?: string;
+        ProcurementF3SubmitDate?: string;
+        ProcurementF3SubmitBy?: string;
+        ProcurementF31SubmitDate?: string;
+        ProcurementF31SubmitBy?: string;
+        ProcurementF4SubmitDate?: string;
+        ProcurementF4SubmitBy?: string;
+        ProcurementF5SubmitDate?: string;
+        ProcurementF5SubmitBy?: string;
+        ProcurementF6SubmitDate?: string;
+        ProcurementF6SubmitBy?: string;
+        ProcurementF7SubmitDate?: string;
+        ProcurementF7SubmitBy?: string;
+        ProcurementF8SubmitDate?: string;
+        ProcurementF8SubmitBy?: string;
+        ProcurementF9SubmitDate?: string;
+        ProcurementF9SubmitBy?: string;
+        ProcurementF10SubmitDate?: string;
+        ProcurementF10SubmitBy?: string;
+        ProcurementF11SubmitDate?: string;
+        ProcurementF11SubmitBy?: string;
+        ProcurementF12SubmitDate?: string;
+        ProcurementF12SubmitBy?: string;
+        ProcurementF13SubmitDate?: string;
+        ProcurementF13SubmitBy?: string;
+        ProcurementF14SubmitDate?: string;
+        ProcurementF14SubmitBy?: string;
+        ProcurementF15SubmitDate?: string;
+        ProcurementF15SubmitBy?: string;
+        ProcurementF16SubmitDate?: string;
+        ProcurementF16SubmitBy?: string;
+        ProcurementF17SubmitDate?: string;
+        ProcurementF17SubmitBy?: string;
+        ProcurementF19SubmitDate?: string;
+        ProcurementF19SubmitBy?: string;
+        ProcurementProcurementMethodId?: string;
+        ProcurementDistrict?: string;
+        ProcurementCsms?: string;
+        ProcurementMinScore?: string;
+        ProcurementProcRejectTender?: boolean;
+        ProcurementProcRejectTenderDesc?: string;
+        AdminDocAtkName?: string;
+        AdminDocAtkDescription?: string;
+        TechSpecDocAtkName?: string;
+        TechSpecDocAtkDescription?: string;
+        SupportingLetterAtkName?: string;
+        SupportingLetterAtkDescription?: string;
+        CatalogAtkName?: string;
+        CatalogAtkDescription?: string;
+        EvaluationConclusionName?: string;
+        EvaluationConclusionDescription?: string;
+    }
+
+    export namespace F99TestRow {
+        export const idProperty = 'ProcParticipantId';
+        export const nameProperty = 'VendorId';
+        export const localTextPrefix = 'Procurement.F99Test';
+
+        export namespace Fields {
+            export declare const ProcParticipantId;
+            export declare const ProcurementId;
+            export declare const SequenceNo;
+            export declare const VendorId;
+            export declare const PriceDocumentFile;
+            export declare const PriceDocumentName;
+            export declare const TechSpecDocFile;
+            export declare const TechSpecDocName;
+            export declare const SupportingLetterFile;
+            export declare const SupportingLetterName;
+            export declare const CatalogFile;
+            export declare const CatalogName;
+            export declare const SubmitDocTnc;
+            export declare const SubmitDocTncDate;
+            export declare const AdminDocExists;
+            export declare const TechSpecDocExists;
+            export declare const SupportingLetterExists;
+            export declare const CatalogExists;
+            export declare const OpeningDocDesc;
+            export declare const AdminDocAtk;
+            export declare const TechSpecDocAtk;
+            export declare const SupportingLetterAtk;
+            export declare const CatalogAtk;
+            export declare const EvaluationDesc;
+            export declare const ClarificationRequest;
+            export declare const EvaluationConclusionId;
+            export declare const ClarificationOffer;
+            export declare const ClarificationResult;
+            export declare const Source;
+            export declare const F5ParticipantSubmitDate;
+            export declare const F5ParticipantSubmitBy;
+            export declare const FinalBidPrice;
+            export declare const SubmitObjection;
+            export declare const ObjectionDescription;
+            export declare const F15ParticipantSubmitDate;
+            export declare const F15ParticipantSubmitBy;
+            export declare const Invitation;
+            export declare const QuoteDesc;
+            export declare const ProcurementProcurementTypeId;
+            export declare const ProcurementStatus;
+            export declare const ProcurementCollectiveNumber;
+            export declare const ProcurementTitle;
+            export declare const ProcurementClassification;
+            export declare const ProcurementQualification;
+            export declare const ProcurementRequestedBy;
+            export declare const ProcurementRequestorPosition;
+            export declare const ProcurementApprovedBy;
+            export declare const ProcurementApproverPosition;
+            export declare const ProcurementSapBidderListCreatedBy;
+            export declare const ProcurementSapBidderListCreatedDate;
+            export declare const ProcurementCreatedBy;
+            export declare const ProcurementCreatedDate;
+            export declare const ProcurementGuaranteePercentage;
+            export declare const ProcurementOfficeAddress;
+            export declare const ProcurementProcValueRangeId;
+            export declare const ProcurementCommitteeTypeId;
+            export declare const ProcurementPerformanceGuaranteeRequired;
+            export declare const ProcurementTenderPeriod;
+            export declare const ProcurementDeliveryTime;
+            export declare const ProcurementDestinationId;
+            export declare const ProcurementContractTypeId;
+            export declare const ProcurementCurrencyId;
+            export declare const ProcurementDocSubmitMethodId;
+            export declare const ProcurementAanwijzingExists;
+            export declare const ProcurementAanwijzingDate;
+            export declare const ProcurementAanwijzingClosingDate;
+            export declare const ProcurementAanwijzingLocation;
+            export declare const ProcurementAanwijzingClosingLocation;
+            export declare const ProcurementAanwijzingSecretary;
+            export declare const ProcurementTechnicalExplanation;
+            export declare const ProcurementAdministrativeExplanation;
+            export declare const ProcurementOtherExplanation;
+            export declare const ProcurementAanwijzingSummary;
+            export declare const ProcurementFieldSurveyExists;
+            export declare const ProcurementFieldSurveyAddress;
+            export declare const ProcurementItbDocumentFile;
+            export declare const ProcurementItbDocumentName;
+            export declare const ProcurementRksDocumentFile;
+            export declare const ProcurementRksDocumentName;
+            export declare const ProcurementTenderDocSubmitOpenDate;
+            export declare const ProcurementTenderDocSubmitCloseDate;
+            export declare const ProcurementOrderTypeId;
+            export declare const ProcurementPurchDocNum;
+            export declare const ProcurementRfqDate;
+            export declare const ProcurementQuotationDeadline;
+            export declare const ProcurementPurchGroup;
+            export declare const ProcurementPrNo;
+            export declare const ProcurementAuthPersonName;
+            export declare const ProcurementAuthPosition;
+            export declare const ProcurementHeaderText;
+            export declare const ProcurementHeaderNote;
+            export declare const ProcurementWorkDescription;
+            export declare const ProcurementBankKey;
+            export declare const ProcurementPoCover;
+            export declare const ProcurementDeliveryAddress;
+            export declare const ProcurementToPTargVal;
+            export declare const ProcurementYourReference;
+            export declare const ProcurementOurReference;
+            export declare const ProcurementSalesPerson;
+            export declare const ProcurementTelephone;
+            export declare const ProcurementValidityStart;
+            export declare const ProcurementValidityEnd;
+            export declare const ProcurementItemInterval;
+            export declare const ProcurementSubItemInterval;
+            export declare const ProcurementWarranty;
+            export declare const ProcurementLanguage;
+            export declare const ProcurementEvaluationClosingPriceDate;
+            export declare const ProcurementReviewOeRequired;
+            export declare const ProcurementProcAgreement;
+            export declare const ProcurementProcAgreementDate;
+            export declare const ProcurementProcAsRequired;
+            export declare const ProcurementProcAsApproved;
+            export declare const ProcurementProcAsApprovedDate;
+            export declare const ProcurementProcAsDesc;
+            export declare const ProcurementFinalConclusionDesc;
+            export declare const ProcurementWinnerNominationDate;
+            export declare const ProcurementObjectionCloseDate;
+            export declare const ProcurementPoDocName;
+            export declare const ProcurementTemporaryPic;
+            export declare const ProcurementPoNumber;
+            export declare const ProcurementPoDocFile;
+            export declare const ProcurementF1SubmitDate;
+            export declare const ProcurementF1SubmitBy;
+            export declare const ProcurementF2SubmitDate;
+            export declare const ProcurementF2SubmitBy;
+            export declare const ProcurementF3SubmitDate;
+            export declare const ProcurementF3SubmitBy;
+            export declare const ProcurementF31SubmitDate;
+            export declare const ProcurementF31SubmitBy;
+            export declare const ProcurementF4SubmitDate;
+            export declare const ProcurementF4SubmitBy;
+            export declare const ProcurementF5SubmitDate;
+            export declare const ProcurementF5SubmitBy;
+            export declare const ProcurementF6SubmitDate;
+            export declare const ProcurementF6SubmitBy;
+            export declare const ProcurementF7SubmitDate;
+            export declare const ProcurementF7SubmitBy;
+            export declare const ProcurementF8SubmitDate;
+            export declare const ProcurementF8SubmitBy;
+            export declare const ProcurementF9SubmitDate;
+            export declare const ProcurementF9SubmitBy;
+            export declare const ProcurementF10SubmitDate;
+            export declare const ProcurementF10SubmitBy;
+            export declare const ProcurementF11SubmitDate;
+            export declare const ProcurementF11SubmitBy;
+            export declare const ProcurementF12SubmitDate;
+            export declare const ProcurementF12SubmitBy;
+            export declare const ProcurementF13SubmitDate;
+            export declare const ProcurementF13SubmitBy;
+            export declare const ProcurementF14SubmitDate;
+            export declare const ProcurementF14SubmitBy;
+            export declare const ProcurementF15SubmitDate;
+            export declare const ProcurementF15SubmitBy;
+            export declare const ProcurementF16SubmitDate;
+            export declare const ProcurementF16SubmitBy;
+            export declare const ProcurementF17SubmitDate;
+            export declare const ProcurementF17SubmitBy;
+            export declare const ProcurementF19SubmitDate;
+            export declare const ProcurementF19SubmitBy;
+            export declare const ProcurementProcurementMethodId;
+            export declare const ProcurementDistrict;
+            export declare const ProcurementCsms;
+            export declare const ProcurementMinScore;
+            export declare const ProcurementProcRejectTender;
+            export declare const ProcurementProcRejectTenderDesc;
+            export declare const AdminDocAtkName;
+            export declare const AdminDocAtkDescription;
+            export declare const TechSpecDocAtkName;
+            export declare const TechSpecDocAtkDescription;
+            export declare const SupportingLetterAtkName;
+            export declare const SupportingLetterAtkDescription;
+            export declare const CatalogAtkName;
+            export declare const CatalogAtkDescription;
+            export declare const EvaluationConclusionName;
+            export declare const EvaluationConclusionDescription;
+        }
+
+        [
+            'ProcParticipantId',
+            'ProcurementId',
+            'SequenceNo',
+            'VendorId',
+            'PriceDocumentFile',
+            'PriceDocumentName',
+            'TechSpecDocFile',
+            'TechSpecDocName',
+            'SupportingLetterFile',
+            'SupportingLetterName',
+            'CatalogFile',
+            'CatalogName',
+            'SubmitDocTnc',
+            'SubmitDocTncDate',
+            'AdminDocExists',
+            'TechSpecDocExists',
+            'SupportingLetterExists',
+            'CatalogExists',
+            'OpeningDocDesc',
+            'AdminDocAtk',
+            'TechSpecDocAtk',
+            'SupportingLetterAtk',
+            'CatalogAtk',
+            'EvaluationDesc',
+            'ClarificationRequest',
+            'EvaluationConclusionId',
+            'ClarificationOffer',
+            'ClarificationResult',
+            'Source',
+            'F5ParticipantSubmitDate',
+            'F5ParticipantSubmitBy',
+            'FinalBidPrice',
+            'SubmitObjection',
+            'ObjectionDescription',
+            'F15ParticipantSubmitDate',
+            'F15ParticipantSubmitBy',
+            'Invitation',
+            'QuoteDesc',
+            'ProcurementProcurementTypeId',
+            'ProcurementStatus',
+            'ProcurementCollectiveNumber',
+            'ProcurementTitle',
+            'ProcurementClassification',
+            'ProcurementQualification',
+            'ProcurementRequestedBy',
+            'ProcurementRequestorPosition',
+            'ProcurementApprovedBy',
+            'ProcurementApproverPosition',
+            'ProcurementSapBidderListCreatedBy',
+            'ProcurementSapBidderListCreatedDate',
+            'ProcurementCreatedBy',
+            'ProcurementCreatedDate',
+            'ProcurementGuaranteePercentage',
+            'ProcurementOfficeAddress',
+            'ProcurementProcValueRangeId',
+            'ProcurementCommitteeTypeId',
+            'ProcurementPerformanceGuaranteeRequired',
+            'ProcurementTenderPeriod',
+            'ProcurementDeliveryTime',
+            'ProcurementDestinationId',
+            'ProcurementContractTypeId',
+            'ProcurementCurrencyId',
+            'ProcurementDocSubmitMethodId',
+            'ProcurementAanwijzingExists',
+            'ProcurementAanwijzingDate',
+            'ProcurementAanwijzingClosingDate',
+            'ProcurementAanwijzingLocation',
+            'ProcurementAanwijzingClosingLocation',
+            'ProcurementAanwijzingSecretary',
+            'ProcurementTechnicalExplanation',
+            'ProcurementAdministrativeExplanation',
+            'ProcurementOtherExplanation',
+            'ProcurementAanwijzingSummary',
+            'ProcurementFieldSurveyExists',
+            'ProcurementFieldSurveyAddress',
+            'ProcurementItbDocumentFile',
+            'ProcurementItbDocumentName',
+            'ProcurementRksDocumentFile',
+            'ProcurementRksDocumentName',
+            'ProcurementTenderDocSubmitOpenDate',
+            'ProcurementTenderDocSubmitCloseDate',
+            'ProcurementOrderTypeId',
+            'ProcurementPurchDocNum',
+            'ProcurementRfqDate',
+            'ProcurementQuotationDeadline',
+            'ProcurementPurchGroup',
+            'ProcurementPrNo',
+            'ProcurementAuthPersonName',
+            'ProcurementAuthPosition',
+            'ProcurementHeaderText',
+            'ProcurementHeaderNote',
+            'ProcurementWorkDescription',
+            'ProcurementBankKey',
+            'ProcurementPoCover',
+            'ProcurementDeliveryAddress',
+            'ProcurementToPTargVal',
+            'ProcurementYourReference',
+            'ProcurementOurReference',
+            'ProcurementSalesPerson',
+            'ProcurementTelephone',
+            'ProcurementValidityStart',
+            'ProcurementValidityEnd',
+            'ProcurementItemInterval',
+            'ProcurementSubItemInterval',
+            'ProcurementWarranty',
+            'ProcurementLanguage',
+            'ProcurementEvaluationClosingPriceDate',
+            'ProcurementReviewOeRequired',
+            'ProcurementProcAgreement',
+            'ProcurementProcAgreementDate',
+            'ProcurementProcAsRequired',
+            'ProcurementProcAsApproved',
+            'ProcurementProcAsApprovedDate',
+            'ProcurementProcAsDesc',
+            'ProcurementFinalConclusionDesc',
+            'ProcurementWinnerNominationDate',
+            'ProcurementObjectionCloseDate',
+            'ProcurementPoDocName',
+            'ProcurementTemporaryPic',
+            'ProcurementPoNumber',
+            'ProcurementPoDocFile',
+            'ProcurementF1SubmitDate',
+            'ProcurementF1SubmitBy',
+            'ProcurementF2SubmitDate',
+            'ProcurementF2SubmitBy',
+            'ProcurementF3SubmitDate',
+            'ProcurementF3SubmitBy',
+            'ProcurementF31SubmitDate',
+            'ProcurementF31SubmitBy',
+            'ProcurementF4SubmitDate',
+            'ProcurementF4SubmitBy',
+            'ProcurementF5SubmitDate',
+            'ProcurementF5SubmitBy',
+            'ProcurementF6SubmitDate',
+            'ProcurementF6SubmitBy',
+            'ProcurementF7SubmitDate',
+            'ProcurementF7SubmitBy',
+            'ProcurementF8SubmitDate',
+            'ProcurementF8SubmitBy',
+            'ProcurementF9SubmitDate',
+            'ProcurementF9SubmitBy',
+            'ProcurementF10SubmitDate',
+            'ProcurementF10SubmitBy',
+            'ProcurementF11SubmitDate',
+            'ProcurementF11SubmitBy',
+            'ProcurementF12SubmitDate',
+            'ProcurementF12SubmitBy',
+            'ProcurementF13SubmitDate',
+            'ProcurementF13SubmitBy',
+            'ProcurementF14SubmitDate',
+            'ProcurementF14SubmitBy',
+            'ProcurementF15SubmitDate',
+            'ProcurementF15SubmitBy',
+            'ProcurementF16SubmitDate',
+            'ProcurementF16SubmitBy',
+            'ProcurementF17SubmitDate',
+            'ProcurementF17SubmitBy',
+            'ProcurementF19SubmitDate',
+            'ProcurementF19SubmitBy',
+            'ProcurementProcurementMethodId',
+            'ProcurementDistrict',
+            'ProcurementCsms',
+            'ProcurementMinScore',
+            'ProcurementProcRejectTender',
+            'ProcurementProcRejectTenderDesc',
+            'AdminDocAtkName',
+            'AdminDocAtkDescription',
+            'TechSpecDocAtkName',
+            'TechSpecDocAtkDescription',
+            'SupportingLetterAtkName',
+            'SupportingLetterAtkDescription',
+            'CatalogAtkName',
+            'CatalogAtkDescription',
+            'EvaluationConclusionName',
+            'EvaluationConclusionDescription'
+        ].forEach(x => (<any>Fields)[x] = x);
+    }
+}

@@ -1,0 +1,92 @@
+﻿
+namespace SCMONLINE.Procurement {
+    export class ProcParticipantForm extends Serenity.PrefixedContext {
+        static formKey = 'Procurement.ProcParticipant';
+    }
+
+    export interface ProcParticipantForm {
+        ProcurementId: Serenity.IntegerEditor;
+        SequenceNo: Serenity.IntegerEditor;
+        VendorId: Serenity.StringEditor;
+        PriceDocumentFile: Serenity.StringEditor;
+        PriceDocumentName: Serenity.StringEditor;
+        TechSpecDocFile: Serenity.StringEditor;
+        TechSpecDocName: Serenity.StringEditor;
+        SupportingLetterFile: Serenity.StringEditor;
+        SupportingLetterName: Serenity.StringEditor;
+        CatalogFile: Serenity.StringEditor;
+        CatalogName: Serenity.StringEditor;
+        SubmitDocTnc: Serenity.BooleanEditor;
+        SubmitDocTncDate: Serenity.DateEditor;
+        AdminDocExists: Serenity.BooleanEditor;
+        TechSpecDocExists: Serenity.BooleanEditor;
+        SupportingLetterExists: Serenity.BooleanEditor;
+        CatalogExists: Serenity.BooleanEditor;
+        OpeningDocDesc: Serenity.StringEditor;
+        AdminDocAtk: Serenity.IntegerEditor;
+        TechSpecDocAtk: Serenity.IntegerEditor;
+        SupportingLetterAtk: Serenity.IntegerEditor;
+        CatalogAtk: Serenity.IntegerEditor;
+        EvaluationDesc: Serenity.StringEditor;
+        ClarificationRequest: Serenity.StringEditor;
+        EvaluationConclusionId: Serenity.IntegerEditor;
+        ClarificationOffer: Serenity.StringEditor;
+        ClarificationResult: Serenity.StringEditor;
+        Source: Serenity.StringEditor;
+        F5ParticipantSubmitDate: Serenity.DateEditor;
+        F5ParticipantSubmitBy: Serenity.StringEditor;
+        FinalBidPrice: Serenity.DecimalEditor;
+        SubmitObjection: Serenity.BooleanEditor;
+        ObjectionDescription: Serenity.StringEditor;
+        F15ParticipantSubmitDate: Serenity.DateEditor;
+        F15ParticipantSubmitBy: Serenity.StringEditor;
+        Invitation: Serenity.BooleanEditor;
+        QuoteDesc: Serenity.StringEditor;
+    }
+
+    [,
+        ['ProcurementId', () => Serenity.IntegerEditor],
+        ['SequenceNo', () => Serenity.IntegerEditor],
+        ['VendorId', () => Serenity.StringEditor],
+        ['PriceDocumentFile', () => Serenity.StringEditor],
+        ['PriceDocumentName', () => Serenity.StringEditor],
+        ['TechSpecDocFile', () => Serenity.StringEditor],
+        ['TechSpecDocName', () => Serenity.StringEditor],
+        ['SupportingLetterFile', () => Serenity.StringEditor],
+        ['SupportingLetterName', () => Serenity.StringEditor],
+        ['CatalogFile', () => Serenity.StringEditor],
+        ['CatalogName', () => Serenity.StringEditor],
+        ['SubmitDocTnc', () => Serenity.BooleanEditor],
+        ['SubmitDocTncDate', () => Serenity.DateEditor],
+        ['AdminDocExists', () => Serenity.BooleanEditor],
+        ['TechSpecDocExists', () => Serenity.BooleanEditor],
+        ['SupportingLetterExists', () => Serenity.BooleanEditor],
+        ['CatalogExists', () => Serenity.BooleanEditor],
+        ['OpeningDocDesc', () => Serenity.StringEditor],
+        ['AdminDocAtk', () => Serenity.IntegerEditor],
+        ['TechSpecDocAtk', () => Serenity.IntegerEditor],
+        ['SupportingLetterAtk', () => Serenity.IntegerEditor],
+        ['CatalogAtk', () => Serenity.IntegerEditor],
+        ['EvaluationDesc', () => Serenity.StringEditor],
+        ['ClarificationRequest', () => Serenity.StringEditor],
+        ['EvaluationConclusionId', () => Serenity.IntegerEditor],
+        ['ClarificationOffer', () => Serenity.StringEditor],
+        ['ClarificationResult', () => Serenity.StringEditor],
+        ['Source', () => Serenity.StringEditor],
+        ['F5ParticipantSubmitDate', () => Serenity.DateEditor],
+        ['F5ParticipantSubmitBy', () => Serenity.StringEditor],
+        ['FinalBidPrice', () => Serenity.DecimalEditor],
+        ['SubmitObjection', () => Serenity.BooleanEditor],
+        ['ObjectionDescription', () => Serenity.StringEditor],
+        ['F15ParticipantSubmitDate', () => Serenity.DateEditor],
+        ['F15ParticipantSubmitBy', () => Serenity.StringEditor],
+        ['Invitation', () => Serenity.BooleanEditor],
+        ['QuoteDesc', () => Serenity.StringEditor]
+    ].forEach(x => Object.defineProperty(ProcParticipantForm.prototype, <string>x[0], {
+        get: function () {
+            return this.w(x[0], (x[1] as any)());
+        },
+        enumerable: true,
+        configurable: true
+    }));
+}

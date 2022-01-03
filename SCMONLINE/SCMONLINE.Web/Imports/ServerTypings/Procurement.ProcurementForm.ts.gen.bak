@@ -1,0 +1,272 @@
+﻿
+namespace SCMONLINE.Procurement {
+    export class ProcurementForm extends Serenity.PrefixedContext {
+        static formKey = 'Procurement.Procurement';
+    }
+
+    export interface ProcurementForm {
+        ProcurementTypeId: Serenity.StringEditor;
+        Status: Serenity.StringEditor;
+        CollectiveNumber: Serenity.StringEditor;
+        Title: Serenity.StringEditor;
+        Classification: Serenity.StringEditor;
+        Qualification: Serenity.StringEditor;
+        RequestedBy: Serenity.StringEditor;
+        RequestorPosition: Serenity.StringEditor;
+        ApprovedBy: Serenity.StringEditor;
+        ApproverPosition: Serenity.StringEditor;
+        SapBidderListCreatedBy: Serenity.StringEditor;
+        SapBidderListCreatedDate: Serenity.DateEditor;
+        CreatedBy: Serenity.StringEditor;
+        CreatedDate: Serenity.DateEditor;
+        GuaranteePercentage: Serenity.DecimalEditor;
+        OfficeAddress: Serenity.IntegerEditor;
+        ProcValueRangeId: Serenity.IntegerEditor;
+        CommitteeTypeId: Serenity.IntegerEditor;
+        PerformanceGuaranteeRequired: Serenity.BooleanEditor;
+        TenderPeriod: Serenity.IntegerEditor;
+        DeliveryTime: Serenity.IntegerEditor;
+        DestinationId: Serenity.IntegerEditor;
+        ContractTypeId: Serenity.IntegerEditor;
+        CurrencyId: Serenity.StringEditor;
+        DocSubmitMethodId: Serenity.IntegerEditor;
+        AanwijzingExists: Serenity.BooleanEditor;
+        AanwijzingDate: Serenity.DateEditor;
+        AanwijzingClosingDate: Serenity.DateEditor;
+        AanwijzingLocation: Serenity.StringEditor;
+        AanwijzingClosingLocation: Serenity.StringEditor;
+        AanwijzingSecretary: Serenity.StringEditor;
+        TechnicalExplanation: Serenity.StringEditor;
+        AdministrativeExplanation: Serenity.StringEditor;
+        OtherExplanation: Serenity.StringEditor;
+        AanwijzingSummary: Serenity.StringEditor;
+        FieldSurveyExists: Serenity.BooleanEditor;
+        FieldSurveyAddress: Serenity.StringEditor;
+        ItbDocumentFile: Serenity.StringEditor;
+        ItbDocumentName: Serenity.StringEditor;
+        RksDocumentFile: Serenity.StringEditor;
+        RksDocumentName: Serenity.StringEditor;
+        TenderDocSubmitOpenDate: Serenity.DateEditor;
+        TenderDocSubmitCloseDate: Serenity.DateEditor;
+        OrderTypeId: Serenity.StringEditor;
+        PurchDocNum: Serenity.StringEditor;
+        RfqDate: Serenity.DateEditor;
+        QuotationDeadline: Serenity.DateEditor;
+        PurchGroup: Serenity.StringEditor;
+        PrNo: Serenity.StringEditor;
+        AuthPersonName: Serenity.StringEditor;
+        AuthPosition: Serenity.StringEditor;
+        HeaderText: Serenity.StringEditor;
+        HeaderNote: Serenity.StringEditor;
+        WorkDescription: Serenity.StringEditor;
+        BankKey: Serenity.StringEditor;
+        PoCover: Serenity.StringEditor;
+        DeliveryAddress: Serenity.StringEditor;
+        ToPTargVal: Serenity.StringEditor;
+        YourReference: Serenity.StringEditor;
+        OurReference: Serenity.StringEditor;
+        SalesPerson: Serenity.StringEditor;
+        Telephone: Serenity.StringEditor;
+        ValidityStart: Serenity.DateEditor;
+        ValidityEnd: Serenity.DateEditor;
+        ItemInterval: Serenity.DecimalEditor;
+        SubItemInterval: Serenity.DecimalEditor;
+        Warranty: Serenity.DateEditor;
+        Language: Serenity.StringEditor;
+        EvaluationClosingPriceDate: Serenity.DateEditor;
+        ReviewOeRequired: Serenity.BooleanEditor;
+        ProcAgreement: Serenity.BooleanEditor;
+        ProcAgreementDate: Serenity.DateEditor;
+        ProcAsRequired: Serenity.BooleanEditor;
+        ProcAsApproved: Serenity.BooleanEditor;
+        ProcAsApprovedDate: Serenity.DateEditor;
+        ProcAsDesc: Serenity.StringEditor;
+        FinalConclusionDesc: Serenity.StringEditor;
+        WinnerNominationDate: Serenity.DateEditor;
+        ObjectionCloseDate: Serenity.DateEditor;
+        PoDocName: Serenity.StringEditor;
+        TemporaryPic: Serenity.StringEditor;
+        PoNumber: Serenity.StringEditor;
+        PoDocFile: Serenity.StringEditor;
+        F1SubmitDate: Serenity.DateEditor;
+        F1SubmitBy: Serenity.StringEditor;
+        F2SubmitDate: Serenity.DateEditor;
+        F2SubmitBy: Serenity.StringEditor;
+        F3SubmitDate: Serenity.DateEditor;
+        F3SubmitBy: Serenity.StringEditor;
+        F31SubmitDate: Serenity.DateEditor;
+        F31SubmitBy: Serenity.StringEditor;
+        F4SubmitDate: Serenity.DateEditor;
+        F4SubmitBy: Serenity.StringEditor;
+        F5SubmitDate: Serenity.DateEditor;
+        F5SubmitBy: Serenity.StringEditor;
+        F6SubmitDate: Serenity.DateEditor;
+        F6SubmitBy: Serenity.StringEditor;
+        F7SubmitDate: Serenity.DateEditor;
+        F7SubmitBy: Serenity.StringEditor;
+        F8SubmitDate: Serenity.DateEditor;
+        F8SubmitBy: Serenity.StringEditor;
+        F9SubmitDate: Serenity.DateEditor;
+        F9SubmitBy: Serenity.StringEditor;
+        F10SubmitDate: Serenity.DateEditor;
+        F10SubmitBy: Serenity.StringEditor;
+        F11SubmitDate: Serenity.DateEditor;
+        F11SubmitBy: Serenity.StringEditor;
+        F12SubmitDate: Serenity.DateEditor;
+        F12SubmitBy: Serenity.StringEditor;
+        F13SubmitDate: Serenity.DateEditor;
+        F13SubmitBy: Serenity.StringEditor;
+        F14SubmitDate: Serenity.DateEditor;
+        F14SubmitBy: Serenity.StringEditor;
+        F15SubmitDate: Serenity.DateEditor;
+        F15SubmitBy: Serenity.StringEditor;
+        F16SubmitDate: Serenity.DateEditor;
+        F16SubmitBy: Serenity.StringEditor;
+        F17SubmitDate: Serenity.DateEditor;
+        F17SubmitBy: Serenity.StringEditor;
+        F19SubmitDate: Serenity.DateEditor;
+        F19SubmitBy: Serenity.StringEditor;
+        ProcurementMethodId: Serenity.StringEditor;
+        District: Serenity.StringEditor;
+        Csms: Serenity.StringEditor;
+        MinScore: Serenity.StringEditor;
+        ProcRejectTender: Serenity.BooleanEditor;
+        ProcRejectTenderDesc: Serenity.StringEditor;
+    }
+
+    [,
+        ['ProcurementTypeId', () => Serenity.StringEditor],
+        ['Status', () => Serenity.StringEditor],
+        ['CollectiveNumber', () => Serenity.StringEditor],
+        ['Title', () => Serenity.StringEditor],
+        ['Classification', () => Serenity.StringEditor],
+        ['Qualification', () => Serenity.StringEditor],
+        ['RequestedBy', () => Serenity.StringEditor],
+        ['RequestorPosition', () => Serenity.StringEditor],
+        ['ApprovedBy', () => Serenity.StringEditor],
+        ['ApproverPosition', () => Serenity.StringEditor],
+        ['SapBidderListCreatedBy', () => Serenity.StringEditor],
+        ['SapBidderListCreatedDate', () => Serenity.DateEditor],
+        ['CreatedBy', () => Serenity.StringEditor],
+        ['CreatedDate', () => Serenity.DateEditor],
+        ['GuaranteePercentage', () => Serenity.DecimalEditor],
+        ['OfficeAddress', () => Serenity.IntegerEditor],
+        ['ProcValueRangeId', () => Serenity.IntegerEditor],
+        ['CommitteeTypeId', () => Serenity.IntegerEditor],
+        ['PerformanceGuaranteeRequired', () => Serenity.BooleanEditor],
+        ['TenderPeriod', () => Serenity.IntegerEditor],
+        ['DeliveryTime', () => Serenity.IntegerEditor],
+        ['DestinationId', () => Serenity.IntegerEditor],
+        ['ContractTypeId', () => Serenity.IntegerEditor],
+        ['CurrencyId', () => Serenity.StringEditor],
+        ['DocSubmitMethodId', () => Serenity.IntegerEditor],
+        ['AanwijzingExists', () => Serenity.BooleanEditor],
+        ['AanwijzingDate', () => Serenity.DateEditor],
+        ['AanwijzingClosingDate', () => Serenity.DateEditor],
+        ['AanwijzingLocation', () => Serenity.StringEditor],
+        ['AanwijzingClosingLocation', () => Serenity.StringEditor],
+        ['AanwijzingSecretary', () => Serenity.StringEditor],
+        ['TechnicalExplanation', () => Serenity.StringEditor],
+        ['AdministrativeExplanation', () => Serenity.StringEditor],
+        ['OtherExplanation', () => Serenity.StringEditor],
+        ['AanwijzingSummary', () => Serenity.StringEditor],
+        ['FieldSurveyExists', () => Serenity.BooleanEditor],
+        ['FieldSurveyAddress', () => Serenity.StringEditor],
+        ['ItbDocumentFile', () => Serenity.StringEditor],
+        ['ItbDocumentName', () => Serenity.StringEditor],
+        ['RksDocumentFile', () => Serenity.StringEditor],
+        ['RksDocumentName', () => Serenity.StringEditor],
+        ['TenderDocSubmitOpenDate', () => Serenity.DateEditor],
+        ['TenderDocSubmitCloseDate', () => Serenity.DateEditor],
+        ['OrderTypeId', () => Serenity.StringEditor],
+        ['PurchDocNum', () => Serenity.StringEditor],
+        ['RfqDate', () => Serenity.DateEditor],
+        ['QuotationDeadline', () => Serenity.DateEditor],
+        ['PurchGroup', () => Serenity.StringEditor],
+        ['PrNo', () => Serenity.StringEditor],
+        ['AuthPersonName', () => Serenity.StringEditor],
+        ['AuthPosition', () => Serenity.StringEditor],
+        ['HeaderText', () => Serenity.StringEditor],
+        ['HeaderNote', () => Serenity.StringEditor],
+        ['WorkDescription', () => Serenity.StringEditor],
+        ['BankKey', () => Serenity.StringEditor],
+        ['PoCover', () => Serenity.StringEditor],
+        ['DeliveryAddress', () => Serenity.StringEditor],
+        ['ToPTargVal', () => Serenity.StringEditor],
+        ['YourReference', () => Serenity.StringEditor],
+        ['OurReference', () => Serenity.StringEditor],
+        ['SalesPerson', () => Serenity.StringEditor],
+        ['Telephone', () => Serenity.StringEditor],
+        ['ValidityStart', () => Serenity.DateEditor],
+        ['ValidityEnd', () => Serenity.DateEditor],
+        ['ItemInterval', () => Serenity.DecimalEditor],
+        ['SubItemInterval', () => Serenity.DecimalEditor],
+        ['Warranty', () => Serenity.DateEditor],
+        ['Language', () => Serenity.StringEditor],
+        ['EvaluationClosingPriceDate', () => Serenity.DateEditor],
+        ['ReviewOeRequired', () => Serenity.BooleanEditor],
+        ['ProcAgreement', () => Serenity.BooleanEditor],
+        ['ProcAgreementDate', () => Serenity.DateEditor],
+        ['ProcAsRequired', () => Serenity.BooleanEditor],
+        ['ProcAsApproved', () => Serenity.BooleanEditor],
+        ['ProcAsApprovedDate', () => Serenity.DateEditor],
+        ['ProcAsDesc', () => Serenity.StringEditor],
+        ['FinalConclusionDesc', () => Serenity.StringEditor],
+        ['WinnerNominationDate', () => Serenity.DateEditor],
+        ['ObjectionCloseDate', () => Serenity.DateEditor],
+        ['PoDocName', () => Serenity.StringEditor],
+        ['TemporaryPic', () => Serenity.StringEditor],
+        ['PoNumber', () => Serenity.StringEditor],
+        ['PoDocFile', () => Serenity.StringEditor],
+        ['F1SubmitDate', () => Serenity.DateEditor],
+        ['F1SubmitBy', () => Serenity.StringEditor],
+        ['F2SubmitDate', () => Serenity.DateEditor],
+        ['F2SubmitBy', () => Serenity.StringEditor],
+        ['F3SubmitDate', () => Serenity.DateEditor],
+        ['F3SubmitBy', () => Serenity.StringEditor],
+        ['F31SubmitDate', () => Serenity.DateEditor],
+        ['F31SubmitBy', () => Serenity.StringEditor],
+        ['F4SubmitDate', () => Serenity.DateEditor],
+        ['F4SubmitBy', () => Serenity.StringEditor],
+        ['F5SubmitDate', () => Serenity.DateEditor],
+        ['F5SubmitBy', () => Serenity.StringEditor],
+        ['F6SubmitDate', () => Serenity.DateEditor],
+        ['F6SubmitBy', () => Serenity.StringEditor],
+        ['F7SubmitDate', () => Serenity.DateEditor],
+        ['F7SubmitBy', () => Serenity.StringEditor],
+        ['F8SubmitDate', () => Serenity.DateEditor],
+        ['F8SubmitBy', () => Serenity.StringEditor],
+        ['F9SubmitDate', () => Serenity.DateEditor],
+        ['F9SubmitBy', () => Serenity.StringEditor],
+        ['F10SubmitDate', () => Serenity.DateEditor],
+        ['F10SubmitBy', () => Serenity.StringEditor],
+        ['F11SubmitDate', () => Serenity.DateEditor],
+        ['F11SubmitBy', () => Serenity.StringEditor],
+        ['F12SubmitDate', () => Serenity.DateEditor],
+        ['F12SubmitBy', () => Serenity.StringEditor],
+        ['F13SubmitDate', () => Serenity.DateEditor],
+        ['F13SubmitBy', () => Serenity.StringEditor],
+        ['F14SubmitDate', () => Serenity.DateEditor],
+        ['F14SubmitBy', () => Serenity.StringEditor],
+        ['F15SubmitDate', () => Serenity.DateEditor],
+        ['F15SubmitBy', () => Serenity.StringEditor],
+        ['F16SubmitDate', () => Serenity.DateEditor],
+        ['F16SubmitBy', () => Serenity.StringEditor],
+        ['F17SubmitDate', () => Serenity.DateEditor],
+        ['F17SubmitBy', () => Serenity.StringEditor],
+        ['F19SubmitDate', () => Serenity.DateEditor],
+        ['F19SubmitBy', () => Serenity.StringEditor],
+        ['ProcurementMethodId', () => Serenity.StringEditor],
+        ['District', () => Serenity.StringEditor],
+        ['Csms', () => Serenity.StringEditor],
+        ['MinScore', () => Serenity.StringEditor],
+        ['ProcRejectTender', () => Serenity.BooleanEditor],
+        ['ProcRejectTenderDesc', () => Serenity.StringEditor]
+    ].forEach(x => Object.defineProperty(ProcurementForm.prototype, <string>x[0], {
+        get: function () {
+            return this.w(x[0], (x[1] as any)());
+        },
+        enumerable: true,
+        configurable: true
+    }));
+}

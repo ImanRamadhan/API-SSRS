@@ -1,0 +1,473 @@
+﻿
+namespace SCMONLINE.Procurement {
+    export interface ProcurementRow {
+        ProcurementId?: number;
+        ProcurementTypeId?: string;
+        Status?: string;
+        CollectiveNumber?: string;
+        Title?: string;
+        Classification?: string;
+        Qualification?: string;
+        RequestedBy?: string;
+        RequestorPosition?: string;
+        ApprovedBy?: string;
+        ApproverPosition?: string;
+        SapBidderListCreatedBy?: string;
+        SapBidderListCreatedDate?: string;
+        CreatedBy?: string;
+        CreatedDate?: string;
+        GuaranteePercentage?: number;
+        OfficeAddress?: number;
+        ProcValueRangeId?: number;
+        CommitteeTypeId?: number;
+        PerformanceGuaranteeRequired?: boolean;
+        TenderPeriod?: number;
+        DeliveryTime?: number;
+        DestinationId?: number;
+        ContractTypeId?: number;
+        CurrencyId?: string;
+        DocSubmitMethodId?: number;
+        AanwijzingExists?: boolean;
+        AanwijzingDate?: string;
+        AanwijzingClosingDate?: string;
+        AanwijzingLocation?: string;
+        AanwijzingClosingLocation?: string;
+        AanwijzingSecretary?: string;
+        TechnicalExplanation?: string;
+        AdministrativeExplanation?: string;
+        OtherExplanation?: string;
+        AanwijzingSummary?: string;
+        FieldSurveyExists?: boolean;
+        FieldSurveyAddress?: string;
+        ItbDocumentFile?: string;
+        ItbDocumentName?: string;
+        RksDocumentFile?: string;
+        RksDocumentName?: string;
+        TenderDocSubmitOpenDate?: string;
+        TenderDocSubmitCloseDate?: string;
+        OrderTypeId?: string;
+        PurchDocNum?: string;
+        RfqDate?: string;
+        QuotationDeadline?: string;
+        PurchGroup?: string;
+        PrNo?: string;
+        AuthPersonName?: string;
+        AuthPosition?: string;
+        HeaderText?: string;
+        HeaderNote?: string;
+        WorkDescription?: string;
+        BankKey?: string;
+        PoCover?: string;
+        DeliveryAddress?: string;
+        ToPTargVal?: string;
+        YourReference?: string;
+        OurReference?: string;
+        SalesPerson?: string;
+        Telephone?: string;
+        ValidityStart?: string;
+        ValidityEnd?: string;
+        ItemInterval?: number;
+        SubItemInterval?: number;
+        Warranty?: string;
+        Language?: string;
+        EvaluationClosingPriceDate?: string;
+        ReviewOeRequired?: boolean;
+        ProcAgreement?: boolean;
+        ProcAgreementDate?: string;
+        ProcAsRequired?: boolean;
+        ProcAsApproved?: boolean;
+        ProcAsApprovedDate?: string;
+        ProcAsDesc?: string;
+        FinalConclusionDesc?: string;
+        WinnerNominationDate?: string;
+        ObjectionCloseDate?: string;
+        PoDocName?: string;
+        TemporaryPic?: string;
+        PoNumber?: string;
+        PoDocFile?: string;
+        F1SubmitDate?: string;
+        F1SubmitBy?: string;
+        F2SubmitDate?: string;
+        F2SubmitBy?: string;
+        F3SubmitDate?: string;
+        F3SubmitBy?: string;
+        F31SubmitDate?: string;
+        F31SubmitBy?: string;
+        F4SubmitDate?: string;
+        F4SubmitBy?: string;
+        F5SubmitDate?: string;
+        F5SubmitBy?: string;
+        F6SubmitDate?: string;
+        F6SubmitBy?: string;
+        F7SubmitDate?: string;
+        F7SubmitBy?: string;
+        F8SubmitDate?: string;
+        F8SubmitBy?: string;
+        F9SubmitDate?: string;
+        F9SubmitBy?: string;
+        F10SubmitDate?: string;
+        F10SubmitBy?: string;
+        F11SubmitDate?: string;
+        F11SubmitBy?: string;
+        F12SubmitDate?: string;
+        F12SubmitBy?: string;
+        F13SubmitDate?: string;
+        F13SubmitBy?: string;
+        F14SubmitDate?: string;
+        F14SubmitBy?: string;
+        F15SubmitDate?: string;
+        F15SubmitBy?: string;
+        F16SubmitDate?: string;
+        F16SubmitBy?: string;
+        F17SubmitDate?: string;
+        F17SubmitBy?: string;
+        F19SubmitDate?: string;
+        F19SubmitBy?: string;
+        ProcurementMethodId?: string;
+        District?: string;
+        Csms?: string;
+        MinScore?: string;
+        ProcRejectTender?: boolean;
+        ProcRejectTenderDesc?: string;
+        ProcurementTypeName?: string;
+        ProcurementTypeDescription?: string;
+        StatusName?: string;
+        StatusDescription?: string;
+        StatusSequence?: number;
+        ClassificationAssociationCode?: string;
+        ClassificationAreaCode?: string;
+        ClassificationVendorClass?: string;
+        ClassificationKodeJenisJasa?: string;
+        ClassificationClassificationDescr?: string;
+        ProcValueRangeName?: string;
+        ProcValueRangeDescription?: string;
+        CommitteeTypeName?: string;
+        CommitteeTypeDescription?: string;
+        ContractTypeName?: string;
+        ContractTypeDescription?: string;
+        CurrencyName?: string;
+        CurrencyDescription?: string;
+        DocSubmitMethodName?: string;
+        DocSubmitMethodDescription?: string;
+        OrderTypeName?: string;
+        OrderTypeDescription?: string;
+        ProcurementMethodName?: string;
+        ProcurementMethodDescription?: string;
+    }
+
+    export namespace ProcurementRow {
+        export const idProperty = 'ProcurementId';
+        export const nameProperty = 'ProcurementTypeId';
+        export const localTextPrefix = 'Procurement.Procurement';
+
+        export namespace Fields {
+            export declare const ProcurementId;
+            export declare const ProcurementTypeId;
+            export declare const Status;
+            export declare const CollectiveNumber;
+            export declare const Title;
+            export declare const Classification;
+            export declare const Qualification;
+            export declare const RequestedBy;
+            export declare const RequestorPosition;
+            export declare const ApprovedBy;
+            export declare const ApproverPosition;
+            export declare const SapBidderListCreatedBy;
+            export declare const SapBidderListCreatedDate;
+            export declare const CreatedBy;
+            export declare const CreatedDate;
+            export declare const GuaranteePercentage;
+            export declare const OfficeAddress;
+            export declare const ProcValueRangeId;
+            export declare const CommitteeTypeId;
+            export declare const PerformanceGuaranteeRequired;
+            export declare const TenderPeriod;
+            export declare const DeliveryTime;
+            export declare const DestinationId;
+            export declare const ContractTypeId;
+            export declare const CurrencyId;
+            export declare const DocSubmitMethodId;
+            export declare const AanwijzingExists;
+            export declare const AanwijzingDate;
+            export declare const AanwijzingClosingDate;
+            export declare const AanwijzingLocation;
+            export declare const AanwijzingClosingLocation;
+            export declare const AanwijzingSecretary;
+            export declare const TechnicalExplanation;
+            export declare const AdministrativeExplanation;
+            export declare const OtherExplanation;
+            export declare const AanwijzingSummary;
+            export declare const FieldSurveyExists;
+            export declare const FieldSurveyAddress;
+            export declare const ItbDocumentFile;
+            export declare const ItbDocumentName;
+            export declare const RksDocumentFile;
+            export declare const RksDocumentName;
+            export declare const TenderDocSubmitOpenDate;
+            export declare const TenderDocSubmitCloseDate;
+            export declare const OrderTypeId;
+            export declare const PurchDocNum;
+            export declare const RfqDate;
+            export declare const QuotationDeadline;
+            export declare const PurchGroup;
+            export declare const PrNo;
+            export declare const AuthPersonName;
+            export declare const AuthPosition;
+            export declare const HeaderText;
+            export declare const HeaderNote;
+            export declare const WorkDescription;
+            export declare const BankKey;
+            export declare const PoCover;
+            export declare const DeliveryAddress;
+            export declare const ToPTargVal;
+            export declare const YourReference;
+            export declare const OurReference;
+            export declare const SalesPerson;
+            export declare const Telephone;
+            export declare const ValidityStart;
+            export declare const ValidityEnd;
+            export declare const ItemInterval;
+            export declare const SubItemInterval;
+            export declare const Warranty;
+            export declare const Language;
+            export declare const EvaluationClosingPriceDate;
+            export declare const ReviewOeRequired;
+            export declare const ProcAgreement;
+            export declare const ProcAgreementDate;
+            export declare const ProcAsRequired;
+            export declare const ProcAsApproved;
+            export declare const ProcAsApprovedDate;
+            export declare const ProcAsDesc;
+            export declare const FinalConclusionDesc;
+            export declare const WinnerNominationDate;
+            export declare const ObjectionCloseDate;
+            export declare const PoDocName;
+            export declare const TemporaryPic;
+            export declare const PoNumber;
+            export declare const PoDocFile;
+            export declare const F1SubmitDate;
+            export declare const F1SubmitBy;
+            export declare const F2SubmitDate;
+            export declare const F2SubmitBy;
+            export declare const F3SubmitDate;
+            export declare const F3SubmitBy;
+            export declare const F31SubmitDate;
+            export declare const F31SubmitBy;
+            export declare const F4SubmitDate;
+            export declare const F4SubmitBy;
+            export declare const F5SubmitDate;
+            export declare const F5SubmitBy;
+            export declare const F6SubmitDate;
+            export declare const F6SubmitBy;
+            export declare const F7SubmitDate;
+            export declare const F7SubmitBy;
+            export declare const F8SubmitDate;
+            export declare const F8SubmitBy;
+            export declare const F9SubmitDate;
+            export declare const F9SubmitBy;
+            export declare const F10SubmitDate;
+            export declare const F10SubmitBy;
+            export declare const F11SubmitDate;
+            export declare const F11SubmitBy;
+            export declare const F12SubmitDate;
+            export declare const F12SubmitBy;
+            export declare const F13SubmitDate;
+            export declare const F13SubmitBy;
+            export declare const F14SubmitDate;
+            export declare const F14SubmitBy;
+            export declare const F15SubmitDate;
+            export declare const F15SubmitBy;
+            export declare const F16SubmitDate;
+            export declare const F16SubmitBy;
+            export declare const F17SubmitDate;
+            export declare const F17SubmitBy;
+            export declare const F19SubmitDate;
+            export declare const F19SubmitBy;
+            export declare const ProcurementMethodId;
+            export declare const District;
+            export declare const Csms;
+            export declare const MinScore;
+            export declare const ProcRejectTender;
+            export declare const ProcRejectTenderDesc;
+            export declare const ProcurementTypeName;
+            export declare const ProcurementTypeDescription;
+            export declare const StatusName;
+            export declare const StatusDescription;
+            export declare const StatusSequence;
+            export declare const ClassificationAssociationCode;
+            export declare const ClassificationAreaCode;
+            export declare const ClassificationVendorClass;
+            export declare const ClassificationKodeJenisJasa;
+            export declare const ClassificationClassificationDescr;
+            export declare const ProcValueRangeName;
+            export declare const ProcValueRangeDescription;
+            export declare const CommitteeTypeName;
+            export declare const CommitteeTypeDescription;
+            export declare const ContractTypeName;
+            export declare const ContractTypeDescription;
+            export declare const CurrencyName;
+            export declare const CurrencyDescription;
+            export declare const DocSubmitMethodName;
+            export declare const DocSubmitMethodDescription;
+            export declare const OrderTypeName;
+            export declare const OrderTypeDescription;
+            export declare const ProcurementMethodName;
+            export declare const ProcurementMethodDescription;
+        }
+
+        [
+            'ProcurementId',
+            'ProcurementTypeId',
+            'Status',
+            'CollectiveNumber',
+            'Title',
+            'Classification',
+            'Qualification',
+            'RequestedBy',
+            'RequestorPosition',
+            'ApprovedBy',
+            'ApproverPosition',
+            'SapBidderListCreatedBy',
+            'SapBidderListCreatedDate',
+            'CreatedBy',
+            'CreatedDate',
+            'GuaranteePercentage',
+            'OfficeAddress',
+            'ProcValueRangeId',
+            'CommitteeTypeId',
+            'PerformanceGuaranteeRequired',
+            'TenderPeriod',
+            'DeliveryTime',
+            'DestinationId',
+            'ContractTypeId',
+            'CurrencyId',
+            'DocSubmitMethodId',
+            'AanwijzingExists',
+            'AanwijzingDate',
+            'AanwijzingClosingDate',
+            'AanwijzingLocation',
+            'AanwijzingClosingLocation',
+            'AanwijzingSecretary',
+            'TechnicalExplanation',
+            'AdministrativeExplanation',
+            'OtherExplanation',
+            'AanwijzingSummary',
+            'FieldSurveyExists',
+            'FieldSurveyAddress',
+            'ItbDocumentFile',
+            'ItbDocumentName',
+            'RksDocumentFile',
+            'RksDocumentName',
+            'TenderDocSubmitOpenDate',
+            'TenderDocSubmitCloseDate',
+            'OrderTypeId',
+            'PurchDocNum',
+            'RfqDate',
+            'QuotationDeadline',
+            'PurchGroup',
+            'PrNo',
+            'AuthPersonName',
+            'AuthPosition',
+            'HeaderText',
+            'HeaderNote',
+            'WorkDescription',
+            'BankKey',
+            'PoCover',
+            'DeliveryAddress',
+            'ToPTargVal',
+            'YourReference',
+            'OurReference',
+            'SalesPerson',
+            'Telephone',
+            'ValidityStart',
+            'ValidityEnd',
+            'ItemInterval',
+            'SubItemInterval',
+            'Warranty',
+            'Language',
+            'EvaluationClosingPriceDate',
+            'ReviewOeRequired',
+            'ProcAgreement',
+            'ProcAgreementDate',
+            'ProcAsRequired',
+            'ProcAsApproved',
+            'ProcAsApprovedDate',
+            'ProcAsDesc',
+            'FinalConclusionDesc',
+            'WinnerNominationDate',
+            'ObjectionCloseDate',
+            'PoDocName',
+            'TemporaryPic',
+            'PoNumber',
+            'PoDocFile',
+            'F1SubmitDate',
+            'F1SubmitBy',
+            'F2SubmitDate',
+            'F2SubmitBy',
+            'F3SubmitDate',
+            'F3SubmitBy',
+            'F31SubmitDate',
+            'F31SubmitBy',
+            'F4SubmitDate',
+            'F4SubmitBy',
+            'F5SubmitDate',
+            'F5SubmitBy',
+            'F6SubmitDate',
+            'F6SubmitBy',
+            'F7SubmitDate',
+            'F7SubmitBy',
+            'F8SubmitDate',
+            'F8SubmitBy',
+            'F9SubmitDate',
+            'F9SubmitBy',
+            'F10SubmitDate',
+            'F10SubmitBy',
+            'F11SubmitDate',
+            'F11SubmitBy',
+            'F12SubmitDate',
+            'F12SubmitBy',
+            'F13SubmitDate',
+            'F13SubmitBy',
+            'F14SubmitDate',
+            'F14SubmitBy',
+            'F15SubmitDate',
+            'F15SubmitBy',
+            'F16SubmitDate',
+            'F16SubmitBy',
+            'F17SubmitDate',
+            'F17SubmitBy',
+            'F19SubmitDate',
+            'F19SubmitBy',
+            'ProcurementMethodId',
+            'District',
+            'Csms',
+            'MinScore',
+            'ProcRejectTender',
+            'ProcRejectTenderDesc',
+            'ProcurementTypeName',
+            'ProcurementTypeDescription',
+            'StatusName',
+            'StatusDescription',
+            'StatusSequence',
+            'ClassificationAssociationCode',
+            'ClassificationAreaCode',
+            'ClassificationVendorClass',
+            'ClassificationKodeJenisJasa',
+            'ClassificationClassificationDescr',
+            'ProcValueRangeName',
+            'ProcValueRangeDescription',
+            'CommitteeTypeName',
+            'CommitteeTypeDescription',
+            'ContractTypeName',
+            'ContractTypeDescription',
+            'CurrencyName',
+            'CurrencyDescription',
+            'DocSubmitMethodName',
+            'DocSubmitMethodDescription',
+            'OrderTypeName',
+            'OrderTypeDescription',
+            'ProcurementMethodName',
+            'ProcurementMethodDescription'
+        ].forEach(x => (<any>Fields)[x] = x);
+    }
+}

@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "Content/site/site.css",
+    "inputFile": "Content/site/site.less"
+  },
+  {
+    "outputFile": "Content/site/site.theme.css",
+    "inputFile": "Content/site/site.theme.less"
+  },
+  {
+    "outputFile": "Scripts/jsrender.es5.js",
+    "inputFile": "Scripts/jsrender.js"
+  }
+]

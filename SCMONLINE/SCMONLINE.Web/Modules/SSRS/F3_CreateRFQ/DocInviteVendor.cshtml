@@ -1,0 +1,26 @@
+﻿@model SCMONLINE.Procurement.DocProcurementModel
+
+<html>
+<head>
+    <title>Pengundangan Sebagai Peserta Pengadaan</title>
+</head>
+<body>
+    <p>Diberitahukan Kepada Rekan/Partner dari Pertamina Drilling Service Indonesia,</p><br>
+    <p>Selamat Anda Menjadi Peserta Pengadaan Dalam Pengadaan Kami,</p><br>
+    <p>Berikut Link Aplikasi untuk memasukan dokumen Anda beserta Username dan Password : </p><br />
+    <p>USERNAME : </p>@Model.Username <br />
+    <p>PASSWORD : </p>@Model.Password <br />
+    <p>Tanggal Masuk Dokumen : @Model.InDate</p> <br />
+    <p>Tanggal Closing Dokumen : @Model.CloseDate</p> <br />
+    <p>Anda harus memastikan mengisi di Aplikasi melewati tanggal <b>Masuk Dokumen</b> dan sebelum tanggal <b>Closing Dokumen</b>.</p>
+    <br><br>
+    <p>Apabila ada pertanyaan terkait email ini, dapat menghubungi Fungsi Supply Chain Management dengan PIC: </p>
+
+    <p>@Model.DisplayName</p>
+
+    <p>Demikian disampaikan Terima Kasih.</p><br>
+
+    PT.Pertamina Drilling Services Indonesia
+    Panitia Internal Pengadaan Barang
+</body>
+</html>

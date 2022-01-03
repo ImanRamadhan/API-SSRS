@@ -1,0 +1,50 @@
+﻿
+namespace SCMONLINE.Procurement {
+    export class ProcParticipantItemForm extends Serenity.PrefixedContext {
+        static formKey = 'Procurement.ProcParticipantItem';
+    }
+
+    export interface ProcParticipantItemForm {
+        ProcParticipantId: Serenity.IntegerEditor;
+        ProcurementId: Serenity.IntegerEditor;
+        RfqItemId: Serenity.IntegerEditor;
+        BidPrice: Serenity.DecimalEditor;
+        BidPriceVsOe: Serenity.DecimalEditor;
+        BidPriceVsOePercentage: Serenity.DecimalEditor;
+        Rank: Serenity.IntegerEditor;
+        EvaluationDescription: Serenity.StringEditor;
+        NegotiationPrice: Serenity.DecimalEditor;
+        NpVsOe: Serenity.DecimalEditor;
+        NpVsOePercentage: Serenity.DecimalEditor;
+        NegotiationRank: Serenity.IntegerEditor;
+        NegotiationDesc: Serenity.StringEditor;
+        ProposeDisclaimer: Serenity.BooleanEditor;
+        DisclaimerDesc: Serenity.StringEditor;
+        EvaluationConclusionItemId: Serenity.IntegerEditor;
+    }
+
+    [,
+        ['ProcParticipantId', () => Serenity.IntegerEditor],
+        ['ProcurementId', () => Serenity.IntegerEditor],
+        ['RfqItemId', () => Serenity.IntegerEditor],
+        ['BidPrice', () => Serenity.DecimalEditor],
+        ['BidPriceVsOe', () => Serenity.DecimalEditor],
+        ['BidPriceVsOePercentage', () => Serenity.DecimalEditor],
+        ['Rank', () => Serenity.IntegerEditor],
+        ['EvaluationDescription', () => Serenity.StringEditor],
+        ['NegotiationPrice', () => Serenity.DecimalEditor],
+        ['NpVsOe', () => Serenity.DecimalEditor],
+        ['NpVsOePercentage', () => Serenity.DecimalEditor],
+        ['NegotiationRank', () => Serenity.IntegerEditor],
+        ['NegotiationDesc', () => Serenity.StringEditor],
+        ['ProposeDisclaimer', () => Serenity.BooleanEditor],
+        ['DisclaimerDesc', () => Serenity.StringEditor],
+        ['EvaluationConclusionItemId', () => Serenity.IntegerEditor]
+    ].forEach(x => Object.defineProperty(ProcParticipantItemForm.prototype, <string>x[0], {
+        get: function () {
+            return this.w(x[0], (x[1] as any)());
+        },
+        enumerable: true,
+        configurable: true
+    }));
+}

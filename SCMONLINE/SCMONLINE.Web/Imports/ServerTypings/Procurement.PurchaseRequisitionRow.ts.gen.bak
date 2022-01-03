@@ -1,0 +1,86 @@
+﻿
+namespace SCMONLINE.Procurement {
+    export interface PurchaseRequisitionRow {
+        PrNo?: string;
+        BuyerId?: number;
+        CostCenter?: string;
+        ScanPrFile?: string;
+        ScanPrName?: string;
+        AssignDate?: string;
+        AssignBy?: string;
+        CreatedDate?: string;
+        CreatedBy?: string;
+        Status?: string;
+        BuyerUsername?: string;
+        BuyerDisplayName?: string;
+        BuyerEmail?: string;
+        BuyerSource?: string;
+        BuyerPasswordHash?: string;
+        BuyerPasswordSalt?: string;
+        BuyerLastDirectoryUpdate?: string;
+        BuyerUserImage?: string;
+        BuyerInsertDate?: string;
+        BuyerInsertUserId?: number;
+        BuyerUpdateDate?: string;
+        BuyerUpdateUserId?: number;
+        BuyerIsActive?: number;
+    }
+
+    export namespace PurchaseRequisitionRow {
+        export const idProperty = 'PrNo';
+        export const nameProperty = 'PrNo';
+        export const localTextPrefix = 'Procurement.PurchaseRequisition';
+
+        export namespace Fields {
+            export declare const PrNo;
+            export declare const BuyerId;
+            export declare const CostCenter;
+            export declare const ScanPrFile;
+            export declare const ScanPrName;
+            export declare const AssignDate;
+            export declare const AssignBy;
+            export declare const CreatedDate;
+            export declare const CreatedBy;
+            export declare const Status;
+            export declare const BuyerUsername;
+            export declare const BuyerDisplayName;
+            export declare const BuyerEmail;
+            export declare const BuyerSource;
+            export declare const BuyerPasswordHash;
+            export declare const BuyerPasswordSalt;
+            export declare const BuyerLastDirectoryUpdate;
+            export declare const BuyerUserImage;
+            export declare const BuyerInsertDate;
+            export declare const BuyerInsertUserId;
+            export declare const BuyerUpdateDate;
+            export declare const BuyerUpdateUserId;
+            export declare const BuyerIsActive;
+        }
+
+        [
+            'PrNo',
+            'BuyerId',
+            'CostCenter',
+            'ScanPrFile',
+            'ScanPrName',
+            'AssignDate',
+            'AssignBy',
+            'CreatedDate',
+            'CreatedBy',
+            'Status',
+            'BuyerUsername',
+            'BuyerDisplayName',
+            'BuyerEmail',
+            'BuyerSource',
+            'BuyerPasswordHash',
+            'BuyerPasswordSalt',
+            'BuyerLastDirectoryUpdate',
+            'BuyerUserImage',
+            'BuyerInsertDate',
+            'BuyerInsertUserId',
+            'BuyerUpdateDate',
+            'BuyerUpdateUserId',
+            'BuyerIsActive'
+        ].forEach(x => (<any>Fields)[x] = x);
+    }
+}
